@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundwave - Music Player</title>
+  <meta name="description" content="A beautiful dark glassmorphism music player with stunning visuals and smooth animations">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+ 
+    <aside class="sidebar">
+      <div class="sidebar-content">
+      
+        <div class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 8V4M12 20v-4M8 12H4M20 12h-4"/>
+            </svg>
+          </div>
+          <span class="logo-text">Music Player</span>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="#" class="nav-item active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.3-4.3"/>
+            </svg>
+            <span>Search</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span>Library</span>
+          </a>
+        </nav>
+
+       
+        <div class="playlists-section">
+          <div class="playlists-header">
+            <span class="playlists-title">PLAYLISTS</span>
+            <button class="add-playlist-btn" type="button" aria-label="Add Playlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+          <div class="playlist-list">
+            <a href="#" class="playlist-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+              <span>Liked Songs</span>
+            </a>
+            <a href="#" class="playlist-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Recently Played</span>
+            </a>
+            <a href="#" class="playlist-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+              <span>Chill Vibes</span>
+            </a>
+            <a href="#" class="playlist-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+              <span>Night Drive</span>
+            </a>
+            <a href="#" class="playlist-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+              <span>Focus Mode</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-avatar">G</div>
+          <div class="user-info">
+            <span class="user-name">Ganesan</span>
+            <span class="user-tier">Premium</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+   
+    <main class="main-content">
+     
+      <section class="now-playing-section">
+        <div class="now-playing-header">
+          <span class="now-playing-label">NOW PLAYING</span>
+          <div class="live-indicator">
+            <span class="live-dot"></span>
+            <span>Live</span>
+          </div>
+        </div>
+
+        <div class="album-art-container">
+          <div class="album-glow"></div>
+          <div class="album-art">
+            <img src="images/pirai thedum.jpeg" alt="Album Cover">
+            <div class="vinyl-record">
+              <div class="vinyl-inner"></div>
+            </div>
+          </div>
+          
+          <div class="equalizer">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+
+      
+        <div class="track-info">
+          <h1 class="track-title">Pirai Thedum 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            💙</h1>
+          <p class="track-artist">G. V. Prakash Kumar and Saindhavi</p>
+          <div class="track-tags">
+            <span class="tag tag-primary">Sweet Dreams  ♡</span>
+            <span class="tag tag-accent">Magic Vioce🪄</span>
+          </div>
+        </div>
+      </section>
+
+    
+      <section class="controls-section">
+        <div class="glass-card controls-card">
+          
+          <div class="main-controls">
+            <button class="control-btn" aria-label="Shuffle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/>
+              </svg>
+            </button>
+            <button class="control-btn" type="button" aria-label="Previous">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="19 20 9 12 19 4 19 20"/>
+                <line x1="5" y1="19" x2="5" y2="5"/>
+              </svg>
+            </button>
+            <button class="play-btn" type="button" aria-label="Play">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+            </button>
+            <button class="control-btn" type="button" aria-label="Next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 4 15 12 5 20 5 4"/>
+                <line x1="19" y1="5" x2="19" y2="19"/>
+              </svg>
+            </button>
+            <button class="control-btn" type="button" aria-label="Repeat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m17 2 4 4-4 4"/>
+                <path d="M3 11v-1a4 4 0 0 1 4-4h14"/>
+                <path d="m7 22-4-4 4-4"/>
+                <path d="M21 13v1a4 4 0 0 1-4 4H3"/>
+              </svg>
+            </button>
+          </div>
+
+         
+          <div class="progress-section">
+            <span class="time current-time">1:24</span>
+            <div class="progress-bar">
+              <div class="progress-track">
+                <div class="progress-fill progress-40"></div>
+                <div class="progress-thumb progress-thumb-40"></div>
+              </div>
+            </div>
+            <span class="time total-time">3:45</span>
+          </div>
+
+          <div class="secondary-controls">
+            <button class="like-btn" type="button" aria-label="Like">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+            </button>
+            <div class="volume-control">
+              <button class="volume-btn" type="button" aria-label="Volume">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+              <div class="volume-slider">
+                <div class="volume-track">
+                  <div class="volume-fill volume-70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="glass-card playlist-card">
+          <div class="playlist-header">
+            <h2 class="playlist-title">Up Next</h2>
+            <a href="#" class="see-all-link">See all</a>
+          </div>
+          <div class="playlist-tracks">
+            <div class="track-item active">
+              <img src="images/download.jpeg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Venmegam</span>
+                <span class="track-artist-name"> Yuvan Shankar Raja</span>
+              </div>
+              <span class="track-duration">3:45</span>
+            </div>
+            <div class="track-item">
+              <img src="images/download (3).jpeg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Enna Nadanthalum ❤️</span>
+                <span class="track-artist-name"> Sai Abhyankkar</span>
+              </div>
+              <span class="track-duration">4:12</span>
+            </div>
+            <div class="track-item">
+              <img src="images/images.jpeg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Maruvathai</span>
+                <span class="track-artist-name"> Sid Sriram</span>
+              </div>
+              <span class="track-duration">3:28</span>
+            </div>
+            <div class="track-item">
+              <img src="images/image2.jpg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Nee Singam Dhan</span>
+                <span class="track-artist-name">A. R. Rahman, Sid Sriram</span>
+              </div>
+              <span class="track-duration">5:01</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="mobile-nav">
+      <a href="#" class="mobile-nav-item active">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+        <span>Search</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span>Library</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
