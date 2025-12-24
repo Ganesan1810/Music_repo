@@ -12,11 +12,11 @@
   --border: 217 33% 20%;
   
  
-  --glass-bg: hsla(195, 51%, 15%, 0.8);
-  --glass-border: hsla(115, 77%, 24%, 0.3);
+  --glass-bg: hsla(216, 73%, 13%, 0.8);
+  --glass-border: hsla(120, 7%, 79%, 0.3);
 
-  --gradient-primary: linear-gradient(135deg, hsl(249, 100%, 55%), hsl(30 100% 65%));
-  --gradient-glow: radial-gradient(circle, hsla(318, 86%, 23%, 0.4), transparent 70%);
+  --gradient-primary: linear-gradient(135deg,hsl(218, 69%, 46%), hsl(141, 100%, 65%));
+  --gradient-glow: radial-gradient(circle, hsla(311, 90%, 34%, 0.4), transparent 70%);
   
 
   --shadow-glow: 0 0 70px hsla(321, 76%, 21%, 0.3);
@@ -221,7 +221,7 @@ img {
   color: hsl(var(--foreground));
 }
 
-/* User Profile */
+
 .user-profile {
   display: flex;
   align-items: center;
@@ -546,53 +546,61 @@ img {
 .progress-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 12px;
   margin-bottom: 1.5rem;
 }
 
 .time {
   font-size: 0.75rem;
-  color: hsl(var(--muted-foreground));
+  color: #9aa8bf;
   font-variant-numeric: tabular-nums;
-  min-width: 40px;
+  min-width: 42px;
 }
 
 .current-time {
   text-align: right;
 }
 
+.total-time {
+  text-align: left;
+}
+
+
 .progress-bar {
   flex: 1;
-  position: relative;
 }
+
 
 .progress-track {
-  height: 4px;
-  background: hsl(var(--muted));
-  border-radius: 2px;
   position: relative;
-  cursor: pointer;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  overflow: visible;
 }
 
+
 .progress-fill {
+  width: 40%; 
   height: 100%;
-  background: var(--gradient-primary);
-  border-radius: 2px;
-  transition: width 0.1s linear;
+  background: linear-gradient(90deg, #4facfe, #34e89e);
+  border-radius: 999px;
 }
+
 
 .progress-thumb {
   position: absolute;
   top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
   width: 12px;
   height: 12px;
-  background: hsl(var(--foreground));
+  background: #cad7e4;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  box-shadow: 0 0 8px rgba(50, 150, 108, 0.9);
+  cursor: pointer;
 }
+
 
 .progress-track:hover .progress-thumb {
   opacity: 1;
