@@ -18,15 +18,8 @@
       <div class="sidebar-content">
       
         <div class="logo">
-          <div class="logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="14" r="4"/>
-              <path d="M12 8V4M12 20v-4M8 12H4M20 12h-4"/>
-            </svg>
-          </div>
-          <span class="logo-text">Music Player</span>
+          <span class="logo-text">🎵 Music Player</span>
         </div>
-
         <nav class="nav-menu">
           <a href="#" class="nav-item active">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -100,20 +93,16 @@
             </a>
           </div>
         </div>
-
         <div class="user-profile">
           <div class="user-avatar">G</div>
           <div class="user-info">
             <span class="user-name">Ganesan</span>
-            <span class="user-tier">Premium</span>
           </div>
         </div>
       </div>
     </aside>
 
-   
     <main class="main-content">
-     
       <section class="now-playing-section">
         <div class="now-playing-header">
           <span class="now-playing-label">NOW PLAYING</span>
@@ -122,37 +111,44 @@
             <span>Live</span>
           </div>
         </div>
+        <br><br>
+       
 
         <div class="album-art-container">
-          <div class="album-glow"></div>
+          <div class="album-glow" ></div>
           <div class="album-art">
-            <img src="images/pirai thedum.jpeg" alt="Album Cover">
+            <img class="album-image" src="images/pirai thedum.jpeg" alt="Album Cover">
             <div class="vinyl-record">
               <div class="vinyl-inner"></div>
             </div>
           </div>
-          
+          <br>
+         
           <div class="equalizer">
             <div class="eq-bar"></div>
             <div class="eq-bar"></div>
             <div class="eq-bar"></div>
             <div class="eq-bar"></div>
             <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+             <div class="eq-bar"></div>
+      
           </div>
         </div>
-
-      
+    <br>
+    
         <div class="track-info">
-          <h1 class="track-title">Pirai Thedum💙</h1>
+          <h1 class="track-title">Pirai Thedum🎧</h1><br>
           <p class="track-artist">G. V. Prakash Kumar and Saindhavi</p>
+          <p>(2011)</p>
+          <br><br><br><br>
           <div class="track-tags">
             <span class="tag tag-primary">Sweet Dreams  ♡</span>
             <span class="tag tag-accent">Magic Vioce🪄</span>
           </div>
         </div>
       </section>
-
-    
+        
       <section class="controls-section">
         <div class="glass-card controls-card">
           
@@ -168,11 +164,24 @@
                 <line x1="5" y1="19" x2="5" y2="5"/>
               </svg>
             </button>
-            <button class="play-btn" type="button" aria-label="Play">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="5 3 19 12 5 21 5 3"/>
-              </svg>
-            </button>
+           <div class="player">
+
+  <input type="checkbox" id="toggle-play" />
+
+
+  <label for="toggle-play" class="play-btn" aria-label="Play / Pause">
+ 
+    <svg class="icon play" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <polygon points="5 3 19 12 5 21 5 3"/>
+    </svg>
+
+    <svg class="icon pause" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <rect x="6" y="4" width="4" height="16"/>
+      <rect x="14" y="4" width="4" height="16"/>
+    </svg>
+  </label>
+</div>
+
             <button class="control-btn" type="button" aria-label="Next">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="5 4 15 12 5 20 5 4"/>
@@ -203,11 +212,26 @@
           
 
           <div class="secondary-controls">
-            <button class="like-btn" type="button" aria-label="Like">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            <input type="checkbox" id="like-toggle">
+              <label for="like-toggle" class="like-btn" aria-label="Like">
+                <svg class="heart outline" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                 <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3
+               c-1.76 0-3 .5-4.5 2
+               -1.5-1.5-2.74-2-4.5-2
+               A5.5 5.5 0 0 0 2 8.5
+               c0 2.3 1.5 4.05 3 5.5
+               l7 7Z"/>
               </svg>
-            </button>
+              <svg class="heart filled" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+               <path d="M12 21s-7-4.35-9.33-8.55
+               C.5 9.5 2.5 5 6.5 5
+               c2.54 0 3.57 1.5 5.5 3.5
+               C13.93 6.5 14.96 5 17.5 5
+               c4 0 6 4.5 3.83 7.45
+               C19 16.65 12 21 12 21Z"/>
+              </svg>
+            </label>
             <div class="volume-control">
               <button class="volume-btn" type="button" aria-label="Volume">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -230,20 +254,37 @@
           </div>
           <div class="playlist-tracks">
             <div class="track-item active">
-              <img src="images/download.jpeg" alt="Album" class="track-thumb">
+              <img src="images/pirai.jpeg" alt="Album" class="track-thumb">
               <div class="track-details">
-                <span class="track-name">Venmegam</span>
-                <span class="track-artist-name"> Yuvan Shankar Raja</span>
+                <span class="track-name">Pirai Thedum</span>
+                <span class="track-artist-name"> G. V. Prakash Kumar and Saindhavi</span>
               </div>
-              <span class="track-duration">5:30</span>
+              <span class="track-duration">5:02</span>
+            </div>
+            
+            <div class="track-item">
+              <img src="images/amizhel.jpeg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Amizhdhe Nee</span>
+                <span class="track-artist-name">Karthik and Hesham Abdul Wahab</span>
+              </div>
+              <span class="track-duration">3:30</span>
             </div>
             <div class="track-item">
-              <img src="images/download (3).jpeg" alt="Album" class="track-thumb">
+              <img src="images/yaaro.jpeg" alt="Album" class="track-thumb">
               <div class="track-details">
-                <span class="track-name">Enna Nadanthalum </span>
-                <span class="track-artist-name"> Sai Abhyankkar</span>
+                <span class="track-name">Yaaro En Nenjai</span>
+                <span class="track-artist-name">Sagar and Sumangali</span>
               </div>
-              <span class="track-duration">4:12</span>
+              <span class="track-duration">5:08</span>
+            </div>
+            <div class="track-item">
+              <img src="images/sita.jpeg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Kurumugil</span>
+                <span class="track-artist-name">Madhan Karky and Sai Vignesh</span>
+              </div>
+              <span class="track-duration">3:38</span>
             </div>
             <div class="track-item">
               <img src="images/images.jpeg" alt="Album" class="track-thumb">
@@ -251,15 +292,23 @@
                 <span class="track-name">Maruvathai</span>
                 <span class="track-artist-name"> Sid Sriram</span>
               </div>
-              <span class="track-duration">3:28</span>
+              <span class="track-duration">5:56</span>
             </div>
             <div class="track-item">
               <img src="images/image2.jpg" alt="Album" class="track-thumb">
               <div class="track-details">
                 <span class="track-name">Nee Singam Dhan</span>
-                <span class="track-artist-name">A. R. Rahman, Sid Sriram</span>
+                <span class="track-artist-name">A. R. Rahman and Sid Sriram</span>
               </div>
-              <span class="track-duration">5:01</span>
+              <span class="track-duration">4:07</span>
+            </div>
+            <div class="track-item">
+              <img src="images/Koondu.jpeg" alt="Album" class="track-thumb">
+              <div class="track-details">
+                <span class="track-name">Koondukulla</span>
+                <span class="track-artist-name">R.V.Udayakumar and Ilaiyaraaja</span>
+              </div>
+              <span class="track-duration">4:16</span>
             </div>
           </div>
         </div>
