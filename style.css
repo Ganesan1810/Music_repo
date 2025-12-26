@@ -12,8 +12,8 @@
   --border: 217 33% 20%;
   
  
-  --glass-bg: hsla(230, 84%, 25%, 0.8);
-  --glass-border: hsla(120, 7%, 79%, 0.3);
+  --glass-bg: hsla(0, 7%, 3%, 0.8);
+  --glass-border: hsla(120, 2%, 42%, 0.3);
 
   --gradient-primary: linear-gradient(135deg,hsl(218, 69%, 46%), hsl(141, 100%, 65%));
   --gradient-glow: radial-gradient(circle, hsla(311, 90%, 34%, 0.4), transparent 70%);
@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: rgb(7, 91, 97);
+  background: rgb(45, 45, 45);
   color: hsl(var(--foreground));
   min-height: 100vh;
   line-height: 1.5;
@@ -331,7 +331,7 @@ img {
 .album-glow {
   position: absolute;
   inset: -2%;
-  background: rgb(185, 27, 183);
+  background: rgb(40, 134, 241);
   filter: blur(40px);
   animation: float 6s ease-in-out infinite;
   z-index: -5;
@@ -405,7 +405,7 @@ img {
 
 .eq-bar {
   width: 4px;
-  background: rgb(16, 151, 230);
+  background: rgb(126, 1, 126);
   border-radius: 2px;
   animation: equalizer 1s ease-in-out infinite;
 }
@@ -463,13 +463,13 @@ img {
 }
 
 .tag-primary {
-  background: hsl(var(--primary) / 0.2);
-  color: hsl(var(--primary));
+  background: rgb(107, 6, 80);
+  color: rgb(253, 247, 247);
 }
 
 .tag-accent {
-  background: hsl(var(--accent) / 0.2);
-  color: hsl(var(--accent));
+  background:rgb(48, 48, 213);
+  color: white;
 }
 
 
@@ -806,7 +806,7 @@ img {
 }
 
 .track-item.active {
-  background: rgb(174, 179, 171);
+  background: rgb(134, 81, 239);
 }
 
 .track-thumb {
